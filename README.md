@@ -21,7 +21,7 @@ The Alarm Clock project is a simple web application that allows users to set ala
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/yourusername/alarm-clock.git`
+1. Clone the repository: `git clone https://github.com/Vicky2457/Alarm_Clock.git`
 2. Navigate to the project directory: `cd alarm-clock`
 3. Open the `index.html` file in your web browser.
 
