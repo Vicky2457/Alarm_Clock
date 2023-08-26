@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon for the web page -->
+  <link rel="icon" href="static/favicon.png" type="image/x-icon">
+    <!-- Title of the web page -->
+  <title>Alarm Clock</title>
+    <!-- Linking to an external CSS file for styling -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Clock display section -->
+  <div class="clock">
+    <h1 id="digital-clock">12:00:00AM</h1>
+  </div>
+    <!-- Notification container section -->
+  <div id="notification-container"></div>
+    <!-- Alarm setting section -->
+  <div class="alarm">
+    <label for="alarm-time">Set Alarm:</label> 
+    <input type="time" id="alarm-time" step="1">   <!-- Time input field -->
+    <button onclick="setAlarm()">Set Alarm</button>     <!-- Button to set alarm -->
+  </div>
+  <div class="alarms-list">
+
+  <!-- Alarms list section -->
+    <h2>Alarms List</h2>
+    <ol id="alarms">
+      <!-- Alarms will be added here -->
+    </ol>
+  </div>
+    <!-- Audio element for alarm sound -->
+  <audio id="alarm-audio" src="static/ringtone.wav"></audio>
+    <!-- Linking to an external JavaScript file for scripting -->
+  <script src="script.js"></script>
+</body>
+
+</html>

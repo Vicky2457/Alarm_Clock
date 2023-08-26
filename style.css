@@ -1,0 +1,81 @@
+/* Set the background color and font for the whole page */
+body {
+  font-family: Arial, sans-serif;
+  background-color:
+    #9797d3;
+}
+
+/* Center-align and add space around clock, alarm, and alarms list sections */
+.clock,
+.alarm,
+.alarms-list {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Space out the time input and "Set Alarm" button in the alarm section */
+.alarm input[type="time"] {
+  margin-right: 10px;
+}
+
+/* Style the list of alarms */
+.alarms-list {
+  border: 1px solid #ccc;
+  padding: 10px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* Style for buttons */
+button {
+  padding: 8px 16px;
+  background-color: #4e342ea6;
+  color:#fff;
+  border: none;
+  cursor: pointer;
+}
+/* Button hover effect */
+button:hover {
+  background-color:
+    #0056b3;
+}
+
+/* Add space between list items in the alarms list */
+.alarms-list ol li {
+  margin-bottom: 5px;
+}
+
+/* Add space around the delete button */
+.alarms-list button {
+  margin-left: 5px;
+  padding: 4px 8px;
+}
+
+/* Style for notifications */
+.notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  animation: fadeOut 3s forwards;  /* Apply a fade-out animation */
+}
+
+/* Animation to fade out notifications */
+@keyframes fadeOut {
+  0%, 100% {
+    opacity: 1;  /* Start and end with full visibility */
+  }
+  90% {
+    opacity: 1;  /* Stay mostly visible until near the end */
+  }
+  100% {
+    opacity: 0;   /* Completely disappear */
+    transform: translateX(-50%) translateY(-20px); /* Move slightly up */
+  }
+}
